@@ -1,0 +1,28 @@
+package:
+  name: pptcom
+  version: 0.1
+
+source:
+  path: ..
+
+build:
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pandoc
+    - pypandoc
+  run:
+    - python
+    - comtypes
+
+test:
+  imports:
+    - pptcom
+
+about:
+  home: https://github.com/m-rossi/pptcom
+  license: MIT
+  summary: Use Microsoft PowerPoint within Python with the help of COM
