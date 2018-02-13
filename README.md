@@ -1,6 +1,16 @@
 # pptcom
 Use Microsoft PowerPoint within Python with the help of COM
 
+## Installation
+
+```
+pip install pptcom
+```
+
+```
+conda install -c mrossi pptcom
+```
+
 ## Usage
 
 You can export the slides of a PowerPoint-presentation:
