@@ -26,7 +26,7 @@ test:
     - pytest
     - python-pptx
   commands:
-    - py.test --pyargs pptcm
+    - py.test --pyargs pptcom
 
 about:
   home: https://github.com/m-rossi/pptcom
