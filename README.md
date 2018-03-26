@@ -27,6 +27,13 @@ with pptcom.File('presentation.pptx') as pptfile:
 
 ## Development
 
+### Building
+
+It is recommended to use [conda-build](https://github.com/conda/conda-build) for building the package. Due to the required packages for testing you need to execute the follwing command inside the repository folder to successfully build the package:
+```
+conda-build conda.recipe conda.recipe -c defaults -c conda-forge
+```
+
 ### Testing
 
 For testing purposes [python-pptx](https://github.com/scanny/python-pptx) is used, after an installation of this package you can test the package with pytest.
