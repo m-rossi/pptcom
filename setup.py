@@ -25,6 +25,7 @@ setup(
     name='pptcom',
     packages=['pptcom'],
     python_requires='>=3.6',
+    setup_requires=['setuptools_scm'],
     url='https://github.com/m-rossi/pptcom',
-    version='0.1'
+    use_scm_version=True,
 )
