@@ -22,6 +22,11 @@ requirements:
 test:
   imports:
     - pptcom
+  requires:
+    - pytest
+    - python-pptx
+  commands:
+    - py.test --pyargs pptcm
 
 about:
   home: https://github.com/m-rossi/pptcom
