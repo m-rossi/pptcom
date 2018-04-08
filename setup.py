@@ -1,11 +1,8 @@
 from setuptools import setup
 
 
-try:
-    import pypandoc
-    long_description = pypandoc.convert('README.md', 'rst')
-except ImportError:
-    long_description = open('README.md').read()
+with open('README.md') as f:
+    long_description = f.read()
 
 setup(
     author='Marco Rossi',
@@ -21,10 +18,11 @@ setup(
     keywords=['com', 'powerpoint'],
     license='MIT',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     name='pptcom',
     packages=['pptcom'],
     python_requires='>=3.6',
-    setup_requires=['setuptools_scm'],
+    setup_requires=['setuptools>=38.6.0', 'setuptools_scm'],
     url='https://github.com/m-rossi/pptcom',
     use_scm_version=True,
 )
