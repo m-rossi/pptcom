@@ -10,7 +10,7 @@ build:
 
 requirements:
   build:
-    - python
+    - python {{ python }}
     - setuptools >=38.6.0
     - setuptools_scm
   run:
